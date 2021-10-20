@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint src --max-warnings=0",
-    "postinstall": "husky install"
+    "test": "jest"
   },
-  "lint-staged":{
+  "lint-staged": {
     "src/**/*": [
       "yarn lint --fix"
     ]
@@ -20,6 +20,8 @@
     "react-dom": "17.0.1"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "7.10.1",
+    "@types/jest": "26.0.3",
     "@types/node": "14.0.14",
     "@types/react": "16.9.41",
     "@typescript-eslint/eslint-plugin": "3.4.0",
@@ -30,6 +32,7 @@
     "eslint-plugin-react": "7.20.0",
     "eslint-plugin-react-hooks": "4.0.4",
     "husky": "5.1.1",
+    "jest": "26.1.0",
     "lint-staged": "10.5.4",
     "prettier": "2.2.1",
     "typescript": "3.9.5"
